@@ -1,0 +1,328 @@
+body{
+    margin: 0 20px 0 20px;
+    padding: 0;
+    font-family: "Roboto Mono", monospace;
+    text-align: center;
+}
+.heading{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+h1{
+   
+    padding: 0;
+    margin-bottom: 20px;
+    font-size: 3rem;
+}
+p{
+  margin: 0;
+  
+  padding: 0;  
+  font-size: 1rem;
+}
+p span{
+    font-weight: 500;
+}
+.flexboxcontainer1{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 350px;
+}
+.gridcontainer1{
+    height: 250px;
+    width: 250px;
+    background-color: #000;
+    gap: 5px;
+    display: grid;
+    grid-template-columns: 107px 72px 43px 13px;
+    grid-template-rows: 126px 57px 45px 7px;
+}
+.item{
+        background-color: #F0F1EC;
+}
+.gridcontainer1 > .red{
+       background-color: #E72F24;
+}
+.gridcontainer1 > .white1{
+        grid-column: span 3;
+}
+.gridcontainer1 > .white2{
+        grid-row: span 2;
+}
+.gridcontainer1 > .white3{
+        grid-area: 2 / 2 / 4 / 4;
+}
+.gridcontainer1 > .blue{
+        background-color: #004592;
+        border-bottom: 5px solid #000;
+}    
+.gridcontainer1 > .white4{
+        grid-row: span 2;
+}
+.gridcontainer1 > .yellow{
+        background-color: #F9D01E;
+}
+.gridcontainer1 > .black{
+        background-color: #232629;
+}
+.gridcontainer2{
+    height: 250px;
+    width: 250px;
+    background-color: #000;
+    gap: 5px;
+    display: grid;
+    grid-template-columns: 31px 90px 53px 61px;
+    grid-template-rows: 51px 92px 50px 42px;
+}
+.gridcontainer2 > .red{
+    background-color: #E72F24;
+    grid-area: 2 / 2 / 4 / 4;
+}
+.gridcontainer2 > .white1{
+    grid-column: span 2;
+}
+.gridcontainer2 > .black{
+    background-color: #232629;
+   
+}
+.gridcontainer2 > .blue{
+    background-color: #004592;
+}
+.gridcontainer2 > .white2{
+    grid-row: span 2;
+}
+.gridcontainer2 > .white3{
+    grid-row: span 2;
+}
+.gridcontainer2 > .white4{
+    grid-row: span 2;
+}
+.gridcontainer2 > .yellow{
+    background-color: #F9D01E;
+    grid-column: span 2;
+}
+.gridcontainer3{
+    height: 250px;
+    width: 250px;
+    background-color: #000;
+    gap: 5px;
+    display: grid;
+    grid-template-columns: 90px 20px 35px 90px;
+    grid-template-rows: 35px 90px 20px 90px;
+}
+.gridcontainer3 > .black{
+    background-color: #232629;
+    grid-column: span 2;
+}
+.gridcontainer3 > .white1{
+    grid-column: span 2;
+}
+.gridcontainer3 > .red{
+    background-color: #E72F24;
+    grid-area: 2 / 1 / 4/ 3;
+}
+.gridcontainer3 > .white2{
+    grid-row: span 2;
+}
+.gridcontainer3 > .blue{
+    background-color: #004592;
+}
+.gridcontainer3 > .white3{
+    grid-row: span 3;
+}
+.gridcontainer3 > .grey{
+    background-color: grey;
+}
+.gridcontainer3 > .yellow{
+    grid-column: span 2;
+    background-color: #F9D01E;
+}
+.gridcontainer4{
+    height: 250px;
+    width: 250px;
+    background-color: #000;
+    gap: 5px;
+    display: grid;
+    grid-template-columns: 50px 75px 25px 85px;
+    grid-template-rows: 25px 107px 53px 50px;
+}
+.gridcontainer4 > .red{
+  background-color: #E72F24;
+  grid-column: span 2;
+}
+.gridcontainer4 > .yellow{
+    background-color: #F9D01E;
+    grid-column: span 2;
+}
+.gridcontainer4 > .white1{
+    grid-row: span 2;
+}
+.gridcontainer4 > .blue{
+    background-color: #004592;
+    grid-column: span 3;
+}
+.gridcontainer4 > .white2{
+    grid-column: span 2;
+}
+.gridcontainer4 > .lightblue{
+    background-color: aqua;
+    
+}
+.gridcontainer4 > .grey{
+    background-color: grey;
+    grid-column: span 2;
+}
+@media (max-width: 1250px){
+    .flexboxcontainer1{
+        height: 1080px;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        flex-direction: column;
+    }
+}
+.flexboxcontainer2{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 350px;
+}
+.gridcontainer5{
+    height: 250px;
+    width: 250px;
+    background-color: #000;
+    gap: 5px;
+    display: grid;
+    grid-template-columns: 20px 10px 85px 10px 60px 40px;
+    grid-template-rows: 45px 12px 23px 70px 15px 60px;
+}
+.gridcontainer5 > .white1{
+   grid-area: 1 / 1/ 3/ 3;
+}
+.gridcontainer5 > .red{
+    background-color: #E72F24;
+    grid-row: span 2;
+}
+.gridcontainer5 > .black{
+    grid-column: span 3;
+    background-color: #232629;
+}
+.gridcontainer5 > .white2{
+   grid-column: span 3; 
+}
+.gridcontainer5 > .blue{
+    background-color: #004592;
+    grid-area: 3/ 1 / 6/ 4;
+}
+.gridcontainer5 > .white3{
+    grid-row: span 3;
+}
+.gridcontainer5 > .white4{
+    grid-column: span 2;
+}
+.gridcontainer5 > .lightblue{
+    background-color: aqua;
+    grid-area: 4 / 5 / 6 / 7;
+}
+.gridcontainer5 > .grey{
+    background-color: grey;
+    grid-column: span 2;
+}
+.gridcontainer5 > .yellow{
+    background-color: #F9D01E;
+    grid-column: span 3;
+}
+.gridcontainer6{
+    height: 250px;
+    width: 250px;
+    background-color: #000;
+    gap: 5px;
+    display: grid;
+    grid-template-columns: repeat(5, 40px) 25px;
+    grid-template-rows: 25px repeat(5, 40px);
+}
+.gridcontainer6 > .white1{
+    grid-column: span 5;
+}
+.gridcontainer6 > .black{
+    background-color: #232629;
+    grid-row: span 3;
+}
+.gridcontainer6 > .red{
+    background-color: #E72F24;
+    grid-area: 2 / 1 / 5/ 3;
+}
+.gridcontainer6 > .white2{
+    grid-column: span 3;
+}
+.gridcontainer6 > .blue{
+    background-color: #004592;
+    grid-row: span 3;
+}
+.gridcontainer6 > .white3{
+    grid-column: span 2;
+}
+.gridcontainer6 > .white4{
+    grid-column: span 3;
+}
+.gridcontainer6 > .lightblue{
+    background-color: aqua;
+    grid-row: span 2;
+}
+.gridcontainer6 > .grey{
+    background-color: grey;
+    grid-column: span 2;
+}
+.gridcontainer6 > .white5{
+    grid-row: span 2;
+}
+.gridcontainer6 > .white6{
+    grid-row: span 2;
+}
+.gridcontainer6 > .yellow{
+    background-color: #F9D01E;
+    grid-column: span 3;
+}
+.gridcontainer7{
+    height: 250px;
+    width: 250px;
+    background-color: #000;
+    gap: 5px;
+    display: grid;
+    grid-template-columns: 25px repeat(5, 40px);
+    grid-template-rows: repeat(5, 40px) 25px;
+}
+.gridcontainer7 > .white1{
+    grid-row: span 6;
+}
+.gridcontainer7 > .white2{
+    grid-column: span 5;
+}
+.gridcontainer7 > .yellow{
+    grid-area: 2/2/6/6;
+    background-color: #F9D01E;
+}
+.gridcontainer7 > .black{
+    grid-row: span 2;
+    background-color: #232629;
+}
+.gridcontainer7 > .blue{
+    grid-row: span 2;
+    background-color: #004592;
+}
+.gridcontainer7 > .white3{
+    grid-column: span 2;
+}
+.gridcontainer7 > .red{
+    grid-column: span 3;
+    background-color: #E72F24;
+}
+@media (max-width: 1250px){
+    .flexboxcontainer2{
+        height: 810px;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        flex-direction: column;
+    }
